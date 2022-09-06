@@ -16,4 +16,7 @@ const isValidRequestBody = function
 }
 
 
-module.exports = { isValid , isValidRequestBody}
+const isValidObjectId = function (Id) { return mongoose.Types.ObjectId.isValid(Id) }
+
+
+module.exports = { isValid , isValidRequestBody, isValidObjectId}

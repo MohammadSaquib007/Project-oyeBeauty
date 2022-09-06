@@ -3,21 +3,21 @@ const movieSchema = new mongoose.Schema(
   {
     movie: {
       type: String,
-      required: true,
+      required: true
     },
     language: {
       type: String,
-      required: true,
+      required: true
     },
     releasedYear: {
       type: String,
-      required: true,
+      required: true
     },
     genres: {
       type: String,
-      required: true,
-    },
+      required: true
+    }
   },
   { timestamps: true }
 );
-module.exports = mongoose.model("film", movieSchema);
+module.exports = mongoose.model('film', movieSchema);
